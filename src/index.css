@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 body {
   max-width: 1240px;
@@ -11,9 +12,10 @@ body {
   font-style: normal;
   font-weight: 500;
   margin: auto;
+  overflow-x: hidden;
 }
 /*************************************header****************************************************************/
-.header_top {
+div.header_top {
   padding-top: 2vh;
   display: flex;
   height: 68px;
@@ -72,6 +74,7 @@ a.active {
 }
 /**************************************hero apropos site*************************************************/
 .hero_image_apropos {
+  background-image: url("../public/images/propos_hero.png");
   position: relative;
   width: 1240px;
   margin: auto;
@@ -79,12 +82,12 @@ a.active {
   border-radius: 25px;
   margin-top: 10vh;
 }
-.hero_image_apropos img {
+/*.hero_image_apropos img {
   position: absolute;
   width: 100%;
   height: 100%;
   border-radius: 25px;
-}
+}*/
 
 /*****************************main*******************************************************/
 .container_appartments {
@@ -195,6 +198,13 @@ img.photo_appartment {
   border-radius: 0px 0px 10px 10px;
   font-weight: 400;
 }
+
+.text_equipement {
+  display: flex;
+  flex-direction: column;
+  color: #ff6060;
+  background-color: #f6f6f6;
+}
 .arrow {
   background-color: #ff6060;
   border: none;
@@ -290,8 +300,8 @@ img.photo_appartment {
 .dropdown_container {
   display: flex;
   justify-content: space-between;
-  margin-top: 30px;
-  height: 250px;
+  margin-top: 10px;
+  height: 200px;
   flex-grow: 1;
 }
 .dropdown_article {
@@ -300,17 +310,20 @@ img.photo_appartment {
 .dropdown_article header {
   background-color: #ff6060;
   color: white;
-  border-radius: 15px;
+  border-radius: 10px;
 }
 .header_dropdown {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 12px;
+  padding: 10px;
+  margin-top: 20px;
 }
 .header_dropdown h4 {
   margin-left: 5px;
   color: white;
+  font-size: 18px;
+  font-weight: 500;
 }
 .header_dropdown .arrow {
   height: 22px;
@@ -403,13 +416,13 @@ img.photo_appartment {
   display: flex;
 }
 /*****************queries******************/
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 430px) {
   body {
-    max-width: 420px;
-    margin: auto;
+    width: 100%;
+    overflow-x: hidden;
   }
   .header_top {
-    max-width: 90%;
+    width: 90%;
     padding-top: 10px;
   }
   .logo {
@@ -466,18 +479,19 @@ img.photo_appartment {
   .container_apropos article {
     width: 100%;
     margin: auto;
+    border-radius: 5px;
   }
   .header_apropos {
     width: 400px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 4px;
+    padding-bottom: 4px;
   }
   .header_apropos h4 {
-    font-size: 14px;
+    font-size: 13px;
   }
   .arrow {
-    margin-right: 35px;
-    height: 25px;
+    margin-right: 20px;
+    height: 22px;
   }
   /**************page appartement********************/
   .slider_container {
@@ -508,7 +522,6 @@ img.photo_appartment {
     margin: auto;
     margin-top: -150px;
     font-weight: 500;
-    border: 2px solid green;
   }
 
   .pros_header h2 {
@@ -516,18 +529,17 @@ img.photo_appartment {
     width: 100%;
     font-weight: 500;
     margin-top: 10px;
-    border: 2px solid blue;
   }
-
   .dropdown_container {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
     gap: 3px;
-    height: 120px;
+    height: auto;
     width: 90%;
     margin: auto;
     margin-top: 35px;
+    flex-grow: 1;
   }
   .dropdown_article {
     width: 380px;
@@ -540,7 +552,6 @@ img.photo_appartment {
     width: 90%;
     height: 300px;
   }
-
   .header_dropdown {
     padding: 5px;
   }
@@ -549,7 +560,7 @@ img.photo_appartment {
     font-weight: 300;
   }
   .text_apropos {
-    font-size: 16px;
+    font-size: 12px;
     border-radius: 0px 0px 10px 10px;
   }
   .container_prospectus {
@@ -569,7 +580,6 @@ img.photo_appartment {
     justify-content: space-evenly;
     margin-top: 20px;
   }
-
   .name_photo {
     display: flex;
     justify-content: flex-end;
@@ -620,16 +630,17 @@ img.photo_appartment {
   main.container_error {
     width: 400px;
     margin: auto;
-    height: 60vh;
+    height: 65vh;
   }
   .numbererror {
     width: 400px;
     display: flex;
     justify-content: center;
-    margin-top: 110px;
+    align-items: center;
   }
   .numbererror p {
     font-size: 96px;
+    font-weight: 700;
   }
   .slogan_error {
     display: flex;
@@ -641,7 +652,20 @@ img.photo_appartment {
     font-size: 18px;
     font-weight: 500;
   }
+  .text-error {
+    margin-top: 10px;
+  }
   .retour_page {
     font-size: 14px;
+    margin-top: 85px;
+  }
+  .text-errordeux {
+    margin-top: 12px;
+  }
+  .text_equipement {
+    font-size: 12px;
+  }
+  .text_equipement span {
+    margin-left: 5px;
   }
 }

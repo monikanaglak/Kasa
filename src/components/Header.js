@@ -2,13 +2,13 @@ import { NavLink } from "react-router-dom";
 
 export function Header() {
   return (
-    <header className="header_top">
+    <div className="header_top">
       <Image></Image>
       <nav>
         <Accueil></Accueil>
         <Apropos></Apropos>
       </nav>
-    </header>
+    </div>
   );
 }
 const Image = () => (

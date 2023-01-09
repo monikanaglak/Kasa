@@ -21,7 +21,7 @@ import React, {useState} from 'react';
                 <img className="arrow" src="/images/arrow.png" alt="arrow"  onClick={()=>setShowEquipement(!showEquipement)}/>
             </header>
             {
-                showEquipement && <p className='text_apropos'>{equipments}</p>
+                showEquipement && <p className='text_equipement'>{equipments.map((eq)=><span>{eq}</span>)}</p>
             }
             
         </article>
