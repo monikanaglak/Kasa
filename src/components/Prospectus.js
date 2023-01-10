@@ -10,9 +10,9 @@ export function Prospectus({ location,title,tags,host,rating,index,picture}) {
         <h2 className="title_appart">{title}</h2>
         <h4 className="location">{location}</h4>
         <div className="tags">
-          {tags.map((tag)=>{
+          {tags.map((tag,index)=>{
             return(
-              <div key={tag.id}>
+              <div key={index}>
                 <p className="single_tag">{tag}</p>
               </div>
             )

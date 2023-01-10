@@ -14,8 +14,7 @@ export function Appartment() {
       <div>
         <Header></Header>
         <Carrousel pictures={local.pictures} />
-
-        <Prospectus key={id} {...local}></Prospectus>
+        <Prospectus {...local}></Prospectus>
         <Dropdown {...local}></Dropdown>
         <Footer></Footer>
       </div>

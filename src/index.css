@@ -169,7 +169,7 @@ img.photo_appartment {
   flex-grow: 1;
 }
 .container_apropos article {
-  background-color: #ff6060;
+  
   border-radius: 10px;
 }
 .header_apropos {
@@ -179,6 +179,7 @@ img.photo_appartment {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #ff6060;
 }
 .header_apropos h4 {
   color: white;
@@ -204,6 +205,14 @@ img.photo_appartment {
   flex-direction: column;
   color: #ff6060;
   background-color: #f6f6f6;
+  gap:2px;
+  font-weight: 400;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.text_equipement span{
+  margin-left: 15px;
+  
 }
 .arrow {
   background-color: #ff6060;
@@ -482,15 +491,16 @@ img.photo_appartment {
     border-radius: 5px;
   }
   .header_apropos {
-    width: 400px;
+    width: 100%;
     padding-top: 4px;
     padding-bottom: 4px;
+    border-radius: 5px;
   }
   .header_apropos h4 {
     font-size: 13px;
   }
   .arrow {
-    margin-right: 20px;
+    margin-right: 30px;
     height: 22px;
   }
   /**************page appartement********************/
@@ -511,7 +521,7 @@ img.photo_appartment {
   }
   .right_arrow {
     top: 220px;
-    left: 375px;
+    left: 360px;
     height: 25px;
   }
   .counter {
@@ -667,5 +677,6 @@ img.photo_appartment {
   }
   .text_equipement span {
     margin-left: 5px;
+    padding: 3px;
   }
 }

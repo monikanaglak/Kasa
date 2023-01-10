@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
- const Dropdown = ({description,equipments})=>{
+ const Dropdown = ({description,equipments,index})=>{
     const [showDescription,setShowDescription] = useState(false)
     const [showEquipement,setShowEquipement] = useState(false)
     return (
@@ -21,7 +21,7 @@ import React, {useState} from 'react';
                 <img className="arrow" src="/images/arrow.png" alt="arrow"  onClick={()=>setShowEquipement(!showEquipement)}/>
             </header>
             {
-                showEquipement && <p className='text_equipement'>{equipments.map((eq)=><span>{eq}</span>)}</p>
+                showEquipement && <p className='text_equipement'>{equipments.map((eq,index)=><span key={index}>{eq} </span>)}</p>
             }
             
         </article>
