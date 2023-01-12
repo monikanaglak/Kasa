@@ -212,7 +212,7 @@ img.photo_appartment {
 }
 .text_equipement span{
   margin-left: 15px;
-  
+  gap:1px;
 }
 .arrow {
   background-color: #ff6060;
@@ -428,20 +428,19 @@ img.photo_appartment {
 @media screen and (max-width: 430px) {
   body {
     width: 100%;
-    overflow-x: hidden;
   }
   .header_top {
     width: 90%;
-    padding-top: 10px;
+    padding-top: 20px;
   }
   .logo {
     width: 120px;
-    height: 40px;
+    height: 38px;
   }
   nav {
-    font-size: 14px;
+    font-size: 13px;
     text-transform: uppercase;
-    width: 170px;
+    width: 160px;
   }
   .hero_image {
     max-width: 87%;
@@ -475,10 +474,10 @@ img.photo_appartment {
   .hero_image_apropos {
     background-image: url("../public/images/secondsecond.jpg");
     width: 90%;
-    height: 200px;
+    height: 250px;
     margin: auto;
     border-radius: 10px;
-    object-fit: fill;
+    object-fit: cover;
   }
   .container_apropos {
     width: 90%;
@@ -541,14 +540,13 @@ img.photo_appartment {
     margin-top: 10px;
   }
   .dropdown_container {
-    margin-top: 20px;
     display: flex;
     flex-direction: column;
     gap: 3px;
     height: auto;
     width: 90%;
     margin: auto;
-    margin-top: 35px;
+    margin-top: 15px;
     flex-grow: 1;
   }
   .dropdown_article {
@@ -622,7 +620,6 @@ img.photo_appartment {
   .single_tag {
     font-size: 10px;
     font-weight: 500;
-    padding: 7px;
   }
   .container_footer {
     margin-top: 40px;
@@ -670,13 +667,16 @@ img.photo_appartment {
     margin-top: 85px;
   }
   .text-errordeux {
-    margin-top: 12px;
+    margin-top: 7px;
   }
   .text_equipement {
     font-size: 12px;
   }
   .text_equipement span {
     margin-left: 5px;
-    padding: 3px;
+    padding: 1px;
+  }
+  .single_tag{
+    border-radius: 5px;
   }
 }
