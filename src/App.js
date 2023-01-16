@@ -1,7 +1,6 @@
 
 import React from 'react'
 import {BrowserRouter, Routes,Route} from 'react-router-dom'
-import {} from 'react-bootstrap'
 import {Accueil} from './pages/accueil'
 import { Appartment } from './pages/appartment'
 import { Error } from './pages/error'
@@ -17,7 +16,6 @@ export function App(){
                     <Route path="/apropos" element={<Apropos/>}></Route>
                     <Route path="/*" element={<Error/>}></Route>    
                 </Routes>
-
             </BrowserRouter>
     
         

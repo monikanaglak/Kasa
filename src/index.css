@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
 body {
   max-width: 1240px;
   background-color: #ffffff;
@@ -157,9 +157,13 @@ img.photo_appartment {
 .retour_page {
   display: flex;
   justify-content: center;
-  margin-top: 15px;
+  margin-top: 115px;
   color: #ff6060;
   text-decoration: underline;
+}
+.retour_page a{
+  font-size: 18px;
+  font-weight: 500;
 }
 /***********************apropos**********************/
 .container_apropos {
@@ -169,7 +173,9 @@ img.photo_appartment {
   flex-grow: 1;
 }
 .container_apropos article {
-  
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 10px;
 }
 .header_apropos {
@@ -180,6 +186,7 @@ img.photo_appartment {
   justify-content: space-between;
   align-items: center;
   background-color: #ff6060;
+  border-radius: 5px;
 }
 .header_apropos h4 {
   color: white;
@@ -205,14 +212,14 @@ img.photo_appartment {
   flex-direction: column;
   color: #ff6060;
   background-color: #f6f6f6;
-  gap:2px;
+  gap: 2px;
   font-weight: 400;
   padding-top: 10px;
   padding-bottom: 10px;
 }
-.text_equipement span{
+.text_equipement span {
   margin-left: 15px;
-  gap:1px;
+  gap: 1px;
 }
 .arrow {
   background-color: #ff6060;
@@ -499,7 +506,7 @@ img.photo_appartment {
     font-size: 13px;
   }
   .arrow {
-    margin-right: 30px;
+    margin-right: 10px;
     height: 22px;
   }
   /**************page appartement********************/
@@ -676,7 +683,7 @@ img.photo_appartment {
     margin-left: 5px;
     padding: 1px;
   }
-  .single_tag{
+  .single_tag {
     border-radius: 5px;
   }
 }

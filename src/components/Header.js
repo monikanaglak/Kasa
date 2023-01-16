@@ -27,6 +27,6 @@ const Apropos = () => (
     to="/apropos"
     className={({ isActive }) => (isActive ? "active" : "inactive")}
   >
-    A propos
+    A Propos
   </NavLink>
 );
